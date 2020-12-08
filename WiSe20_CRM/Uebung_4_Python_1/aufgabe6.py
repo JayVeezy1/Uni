@@ -31,13 +31,12 @@ def aufgabe_6():
     
     # Zusatz - Vergleich:
     print("Vorhersage: ", arr)
-    print("Tatsächliche y values: ", y_test.loc[:]['Wechsel_ja'].values)
-    predictions = len(X_test.index)
+    print("Tatsächliche y values: ", y_test.loc[:]['Wechsel_ja'].values
     incorrect_pred = 0
-    for i in range(0, predictions):
+    for i in range(len(X_test.index)):
         if arr[i] != y_test.iloc[i]['Wechsel_ja']:
                 incorrect_pred += 1
-    print(incorrect_pred, "wrong predictions out of", predictions, "total predictions.")
+    print(incorrect_pred, "wrong predictions out of", len(X_test.index), "total predictions.")
      
 def main():
     aufgabe_6()
