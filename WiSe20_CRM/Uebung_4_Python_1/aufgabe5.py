@@ -30,6 +30,7 @@ def aufgabe_5():
     # print(df.loc[df.Name == 'Hofstadter', ['Jahresgehalt']], "\n")
     # ueber values auf (einzigen) wert des gefilterten df zugreifen
     print(df.loc[df.Name == 'Hofstadter', ['Jahresgehalt']].values[0][0], "\n")
+    #offizielle Lsg: print(mitarbeiter_df.loc[139823, "Jahresgehalt"]) -> aber uns ist doch nur der Name gegeben?
     "Meine Methode :print(df["Jahresgehalt"].loc[124532])"
     
     # 5. Addiere zwei Gehaelter  
